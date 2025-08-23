@@ -1,0 +1,27 @@
+<section class="page-header page-header--events">
+  <div class="gradient-overlay"></div>
+  <div class="row page-header__content">
+    <div class="column">
+      <h1>Upcoming Events</h1>
+    </div>
+  </div>
+</section>
+
+<section class="page-content">
+  <!-- Events listing from events.html -->
+  <div class="row wide block-large-1-2 block-900-full events-list">
+    <div class="column events-list__item" *ngFor="let event of events">
+      <h3 class="display-1 events-list__item-title">
+        <a [routerLink]="['/events', event.id]" title="">{{event.title}}</a>
+      </h3>
+      <p>{{event.description}}</p>
+      <ul class="events-list__meta">
+        <li class="events-list__meta-date">{{event.date}}</li>
+        <li class="events-list__meta-time">{{event.time}}</li>
+        <li class="events-list__meta-location">{{event.location}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+</section>

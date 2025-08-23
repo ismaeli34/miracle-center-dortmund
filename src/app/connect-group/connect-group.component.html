@@ -1,0 +1,21 @@
+<section class="page-header page-header--connect">
+  <div class="gradient-overlay"></div>
+  <div class="row page-header__content">
+    <div class="column">
+      <h1>Connect Groups</h1>
+    </div>
+  </div>
+</section>
+
+<section class="page-content">
+  <!-- Connect group content from connect-group.html -->
+  <form [formGroup]="connectForm" (ngSubmit)="onSubmit()" class="connectForm" autocomplete="off">
+    <fieldset>
+      <div class="form-field">
+        <input formControlName="name" class="h-full-width h-remove-bottom" placeholder="Your Name" type="text">
+      </div>
+      <!-- Other form fields -->
+      <input class="btn btn--primary btn--large h-full-width" value="Get Connected" type="submit">
+    </fieldset>
+  </form>
+</section>

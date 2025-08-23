@@ -1,0 +1,22 @@
+<header class="s-header">
+  <div class="header-logo">
+    <a class="site-logo" routerLink="/">
+      <img src="logo.svg" alt="Homepage">
+
+
+
+
+    </a>
+  </div>
+
+  <nav class="header-nav-wrap">
+    <ul class="header-nav">
+      <li [class.current]="isActive('/')"><a routerLink="/" title="Home">Home</a></li>
+      <li [class.current]="isActive('/about')"><a routerLink="/about" title="About">About</a></li>
+      <li [class.current]="isActive('/events')"><a routerLink="/events" title="Services">Events</a></li>
+      <li [class.current]="isActive('/contact')"><a routerLink="/contact" title="Contact us">Contact</a></li>
+    </ul>
+  </nav>
+
+  <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+</header>
