@@ -1,11 +1,11 @@
 <header class="s-header">
   <div class="header-logo">
     <a class="site-logo" routerLink="/">
-      <img src="logo.svg" alt="Homepage">
-
-
-
-
+      <img src="church_512.png" alt="Homepage" class="logo-icon">
+      <span class="logo-box">
+        <span class="logo-title">Miracle Center Church International e.V</span>
+        <span class="logo-subtitle">Dortmund, Germany</span>
+      </span>
     </a>
   </div>
 
@@ -14,6 +14,7 @@
       <li [class.current]="isActive('/')"><a routerLink="/" title="Home">Home</a></li>
       <li [class.current]="isActive('/about')"><a routerLink="/about" title="About">About</a></li>
       <li [class.current]="isActive('/events')"><a routerLink="/events" title="Services">Events</a></li>
+      <li [class.current]="isActive('/donation')"><a routerLink="/donation" title="Support us">Support us</a></li>
       <li [class.current]="isActive('/contact')"><a routerLink="/contact" title="Contact us">Contact</a></li>
     </ul>
   </nav>

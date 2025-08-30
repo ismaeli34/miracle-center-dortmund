@@ -6,6 +6,10 @@ import { ConnectGroupComponent } from './connect-group/connect-group.component';
 import { ContactComponent } from './contact/contact.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
 import {EventsSingleComponent} from './events-single/events-single.component';
+import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
+import {ImpressumComponent} from './impressum/impressum.component';
+import {VisitComponent} from './visit/visit.component';
+import {DonationComponent} from './donation/donation.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,5 +19,9 @@ export const routes: Routes = [
   { path: 'connect-group', component: ConnectGroupComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'volunteer', component: VolunteerComponent },
+  { path: 'datenschutz', component: PrivacyPolicyComponent },
+  { path: 'impressum', component: ImpressumComponent },
+  {path:'visit', component:VisitComponent},
+  {path:'donation', component:DonationComponent},
   { path: '**', redirectTo: '' }
 ];
