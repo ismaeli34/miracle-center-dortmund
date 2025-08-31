@@ -29,3 +29,11 @@
   font-weight: normal;
   line-height: 1.2;
 }
+
+.header-nav-wrap {
+  display: none;
+}
+
+.header-nav-wrap.is-open {
+  display: block;
+}

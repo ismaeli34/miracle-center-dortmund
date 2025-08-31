@@ -9,7 +9,7 @@
     </a>
   </div>
 
-  <nav class="header-nav-wrap">
+  <nav class="header-nav-wrap" [class.is-open]="isMenuOpen">
     <ul class="header-nav">
       <li [class.current]="isActive('/')"><a routerLink="/" title="Home">Home</a></li>
       <li [class.current]="isActive('/about')"><a routerLink="/about" title="About">About</a></li>
@@ -19,5 +19,5 @@
     </ul>
   </nav>
 
-  <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+  <a class="header-menu-toggle" (click)="toggleMenu()"><span>Menu</span></a>
 </header>

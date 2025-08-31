@@ -10,10 +10,17 @@ import {RouterModule} from '@angular/router';
 })
 export class HeaderComponent {
 
+  isMenuOpen = false;
+
   constructor(private location: Location) { }
 
   isActive(path: string): boolean {
     return this.location.path() === path;
+  }
+
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
 }
