@@ -87,3 +87,49 @@
 .about-submenu a:hover {
   background-color: #f5f5f5;
 }
+
+
+.connect-submenu {
+  position: absolute;
+  top: 100%; /* Position below the "About" link */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: visibility 0s, opacity 0.3s, transform 0.3s;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+
+/* Submenu when visible */
+.connect-submenu.is-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.connect-submenu  li {
+  padding: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.connect-submenu  li:last-child {
+  border-bottom: none;
+}
+
+.connect-submenu  a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.connect-submenu a:hover {
+  background-color: #f5f5f5;
+}

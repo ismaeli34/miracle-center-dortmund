@@ -12,7 +12,6 @@
   <nav class="header-nav-wrap" [class.is-open]="isMenuOpen">
     <ul class="header-nav">
       <li [class.current]="isActive('/')"><a routerLink="/" title="Home">Home</a></li>
-<!--      <li [class.current]="isActive('/about')"><a routerLink="/about" title="About">About</a></li>-->
       <li
         class="has-submenu"
         [class.current]="isActive('/about')"
@@ -23,12 +22,29 @@
         <ul class="about-submenu" [class.is-visible]="showAboutMenu">
           <li><a routerLink="/about">About Us</a></li>
           <li><a routerLink="/about/faith-statement">Faith Statement</a></li>
+          <li><a routerLink="/about/purpose-and-mission">Our Mission</a></li>
           <li><a routerLink="/about/history">History</a></li>
           <li><a routerLink="/about/church-staff">Church Staff</a></li>
           <li><a routerLink="/about/supporting">Supporting MCCI</a></li>
+
         </ul>
       </li>
 
+      <li
+        class="has-submenu"
+        [class.current]="isActive('/connect')"
+        (mouseenter)="showConnectMenu = true"
+        (mouseleave)="showConnectMenu = false"
+      >
+        <a routerLink="/connect" title="Connect">Connect</a>
+        <ul class="connect-submenu" [class.is-visible]="showConnectMenu">
+          <li><a routerLink="/connect">Connect</a></li>
+          <li><a routerLink="/connect/bible-studies">Bible Studies</a></li>
+          <li><a routerLink="/connect/ministries">Ministries</a></li>
+          <li><a routerLink="/connect/prayer-meetings">Prayer Meetings</a></li>
+          <li><a routerLink="/connect/service-teams">Service Teams</a></li>
+        </ul>
+      </li>
       <li [class.current]="isActive('/events')"><a routerLink="/events" title="Services">Events</a></li>
       <li [class.current]="isActive('/donation')"><a routerLink="/donation" title="Support us">Support us</a></li>
       <li [class.current]="isActive('/contact')"><a routerLink="/contact" title="Contact us">Contact</a></li>
