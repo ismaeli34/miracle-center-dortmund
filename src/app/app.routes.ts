@@ -22,6 +22,11 @@ import {BibleStudiesComponent} from './connect/bible-studies/bible-studies.compo
 import {MinistriesComponent} from './connect/ministries/ministries.component';
 import {PrayerMeetingsComponent} from './connect/prayer-meetings/prayer-meetings.component';
 import {ServiceTeamsComponent} from './connect/service-teams/service-teams.component';
+import {SundayWorshipServiceComponent} from './events/sunday-worship-service/sunday-worship-service.component';
+import {HolyCommunionServiceComponent} from './events/holy-communion-service/holy-communion-service.component';
+import {MidnightPrayerComponent} from './events/midnight-prayer/midnight-prayer.component';
+import {ChildDedicationComponent} from './events/child-dedication/child-dedication.component';
+import {MembershipClassComponent} from './events/membership-class/membership-class.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -40,7 +45,13 @@ export const routes: Routes = [
       {path:'prayer-meetings',component: PrayerMeetingsComponent},
       {path:'service-teams',component: ServiceTeamsComponent}
     ]},
-  { path: 'events', component: EventsComponent },
+  { path: 'events', component: EventsComponent, children:[
+      {path:'sunday-worship-service', component: SundayWorshipServiceComponent},
+      {path:'holy-communion-service',component: HolyCommunionServiceComponent},
+      {path:'midnight-prayer', component: MidnightPrayerComponent},
+      {path:'child-dedication',component: ChildDedicationComponent},
+      {path:'membership-class',component: MembershipClassComponent}
+    ] },
   { path: 'events/:id', component: EventsSingleComponent },
   { path: 'connect-group', component: ConnectGroupComponent },
   { path: 'contact', component: ContactComponent },

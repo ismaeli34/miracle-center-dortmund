@@ -12,6 +12,7 @@ export class HeaderComponent {
 
   showAboutMenu = false;
   showConnectMenu = false;
+  showEventMenu = false;
 
 
   isMenuOpen = false;

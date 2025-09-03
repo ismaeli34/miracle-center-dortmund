@@ -45,7 +45,24 @@
           <li><a routerLink="/connect/service-teams">Service Teams</a></li>
         </ul>
       </li>
-      <li [class.current]="isActive('/events')"><a routerLink="/events" title="Services">Events</a></li>
+
+
+      <li
+        class="has-submenu"
+        [class.current]="isActive('/events')"
+        (mouseenter)="showEventMenu = true"
+        (mouseleave)="showEventMenu = false"
+      >
+        <a routerLink="/events" title="Events">Events</a>
+        <ul class="events-submenu" [class.is-visible]="showEventMenu">
+          <li><a routerLink="/events/sunday-worship-service">Sunday Service</a></li>
+          <li><a routerLink="/events/holy-communion-service">Holy Communion</a></li>
+          <li><a routerLink="/events/midnight-prayer">Midnight Prayer</a></li>
+          <li><a routerLink="/events/child-dedication">Dedication</a></li>
+          <li><a routerLink="/events/membership-class">Membership</a></li>
+
+        </ul>
+      </li>
       <li [class.current]="isActive('/donation')"><a routerLink="/donation" title="Support us">Support us</a></li>
       <li [class.current]="isActive('/contact')"><a routerLink="/contact" title="Contact us">Contact</a></li>
     </ul>
