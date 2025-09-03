@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
-import {RouterModule} from '@angular/router';
+import {Router, RouterModule} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,12 +10,16 @@ import {RouterModule} from '@angular/router';
 })
 export class HeaderComponent {
 
+  showAboutMenu = false;
+
   isMenuOpen = false;
 
-  constructor(private location: Location) { }
+  constructor(private location: Location,
+              private router: Router) { }
 
-  isActive(path: string): boolean {
-    return this.location.path() === path;
+  isActive(route: string): boolean {
+    return this.router.isActive(route, false);
+
   }
 
 
