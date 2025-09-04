@@ -89,6 +89,7 @@
 
 .about-submenu li {
   padding: 0;
+  width: 95%;
   border-bottom: 1px solid #eee;
 }
 
@@ -104,7 +105,7 @@
 }
 
 .about-submenu a:hover {
-  background-color: #f5f5f5;
+  background-color: lightgrey;
 }
 
 
@@ -136,6 +137,7 @@
 
 .connect-submenu  li {
   padding: 0;
+  width: 95%;
   border-bottom: 1px solid #eee;
 }
 
@@ -151,7 +153,7 @@
 }
 
 .connect-submenu a:hover {
-  background-color: #f5f5f5;
+  background-color: lightgrey;
 }
 
 
@@ -185,6 +187,7 @@
 
 .events-submenu  li {
   padding: 0;
+  width: 95%;
   border-bottom: 1px solid #eee;
 }
 
@@ -200,5 +203,16 @@
 }
 
 .events-submenu a:hover {
-  background-color: #f5f5f5;
+  background-color: lightgrey;
+}
+
+
+.logo-hide-mobile {
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .logo-hide-mobile {
+    display: none;
+  }
 }

@@ -3,7 +3,7 @@
     <a class="site-logo" routerLink="/">
       <img src="church_512.png" alt="Homepage" class="logo-icon">
       <span class="logo-box">
-        <span class="logo-title">Miracle Center Church International e.V</span>
+        <span class="logo-title">Miracle Center Church <span class="logo-hide-mobile">International e.V</span> </span>
         <span class="logo-subtitle">Dortmund, Germany</span>
       </span>
     </a>
@@ -21,11 +21,14 @@
         <a routerLink="/about" title="About">{{'about.main'| translate}}</a>
         <ul class="about-submenu" [class.is-visible]="showAboutMenu">
           <li><a routerLink="/about">{{'about.about-us'| translate}}</a></li>
+          <li><a routerLink="/about/our-pastor">{{'about.our-pastor'| translate}}</a></li>
           <li><a routerLink="/about/faith-statement">{{'about.faith-statement'| translate }}</a></li>
           <li><a routerLink="/about/purpose-and-mission">{{'about.our-mission'| translate}}</a></li>
           <li><a routerLink="/about/history">{{'about.history'| translate}}</a></li>
           <li><a routerLink="/about/church-staff">{{'about.church-staff'| translate}}</a></li>
           <li><a routerLink="/about/supporting">{{'about.supporting-mcci'| translate}}</a></li>
+          <li><a routerLink="/about/gallery">{{'about.gallery'| translate}}</a></li>
+
 
         </ul>
       </li>

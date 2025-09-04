@@ -27,15 +27,19 @@ import {HolyCommunionServiceComponent} from './events/holy-communion-service/hol
 import {MidnightPrayerComponent} from './events/midnight-prayer/midnight-prayer.component';
 import {ChildDedicationComponent} from './events/child-dedication/child-dedication.component';
 import {MembershipClassComponent} from './events/membership-class/membership-class.component';
+import {OurPastorComponent} from './about/our-pastor/our-pastor.component';
+import {GalleryComponent} from './about/gallery/gallery.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent , children :[
       { path: '', component: AboutUsComponent },
+      { path: 'our-pastor', component: OurPastorComponent },
       { path: 'faith-statement', component: FaithStatementComponent },
       { path: 'history', component: HistoryComponent },
       { path: 'church-staff', component: ChurchStaffComponent },
       { path: 'supporting', component: SupportingComponent },
+      {path:'gallery', component:  GalleryComponent},
       {path:'purpose-and-mission',component:PurposeAndMissionComponent}
     ]},
   {path:'connect',component: ConnectComponent,children:[
