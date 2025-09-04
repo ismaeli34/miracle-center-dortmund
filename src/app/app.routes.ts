@@ -5,7 +5,7 @@ import { EventsComponent } from './events/events.component';
 import { ConnectGroupComponent } from './connect-group/connect-group.component';
 import { ContactComponent } from './contact/contact.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
-import {EventsSingleComponent} from './events-single/events-single.component';
+import {EventsSingleComponent} from './events/events-single/events-single.component';
 import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
 import {ImpressumComponent} from './impressum/impressum.component';
 import {VisitComponent} from './visit/visit.component';
@@ -46,6 +46,7 @@ export const routes: Routes = [
       {path:'service-teams',component: ServiceTeamsComponent}
     ]},
   { path: 'events', component: EventsComponent, children:[
+      {path:'', component: EventsSingleComponent},
       {path:'sunday-worship-service', component: SundayWorshipServiceComponent},
       {path:'holy-communion-service',component: HolyCommunionServiceComponent},
       {path:'midnight-prayer', component: MidnightPrayerComponent},

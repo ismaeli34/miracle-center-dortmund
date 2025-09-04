@@ -1,3 +1,20 @@
+//.s-header{
+//  position: sticky; /* makes it stick */
+//  top: 0; /* stick to the top */
+//  z-index: 1000; /* make sure it stays above other elements */
+//  width: 100%;
+//  background-color: #000; /* add background so content doesn’t show through */
+//}
+
+.s-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000; /* ensure text is readable */
+}
+
 .site-logo {
   display: flex;
   align-items: center; /* vertically center icon and text */
