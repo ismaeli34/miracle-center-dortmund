@@ -11,21 +11,21 @@
 
   <nav class="header-nav-wrap" [class.is-open]="isMenuOpen">
     <ul class="header-nav">
-      <li [class.current]="isActive('/')"><a routerLink="/" title="Home">Home</a></li>
+      <li [class.current]="isActive('/')"><a routerLink="/" title="Home">{{'home'| translate}}</a></li>
       <li
         class="has-submenu"
         [class.current]="isActive('/about')"
         (mouseenter)="showAboutMenu = true"
         (mouseleave)="showAboutMenu = false"
       >
-        <a routerLink="/about" title="About">About</a>
+        <a routerLink="/about" title="About">{{'about.main'| translate}}</a>
         <ul class="about-submenu" [class.is-visible]="showAboutMenu">
-          <li><a routerLink="/about">About Us</a></li>
-          <li><a routerLink="/about/faith-statement">Faith Statement</a></li>
-          <li><a routerLink="/about/purpose-and-mission">Our Mission</a></li>
-          <li><a routerLink="/about/history">History</a></li>
-          <li><a routerLink="/about/church-staff">Church Staff</a></li>
-          <li><a routerLink="/about/supporting">Supporting MCCI</a></li>
+          <li><a routerLink="/about">{{'about.about-us'| translate}}</a></li>
+          <li><a routerLink="/about/faith-statement">{{'about.faith-statement'| translate }}</a></li>
+          <li><a routerLink="/about/purpose-and-mission">{{'about.our-mission'| translate}}</a></li>
+          <li><a routerLink="/about/history">{{'about.history'| translate}}</a></li>
+          <li><a routerLink="/about/church-staff">{{'about.church-staff'| translate}}</a></li>
+          <li><a routerLink="/about/supporting">{{'about.supporting-mcci'| translate}}</a></li>
 
         </ul>
       </li>
@@ -36,13 +36,13 @@
         (mouseenter)="showConnectMenu = true"
         (mouseleave)="showConnectMenu = false"
       >
-        <a routerLink="/connect" title="Connect">Connect</a>
+        <a routerLink="/connect" title="Connect">{{'connect.main'| translate}}</a>
         <ul class="connect-submenu" [class.is-visible]="showConnectMenu">
-          <li><a routerLink="/connect">Connect</a></li>
-          <li><a routerLink="/connect/bible-studies">Bible Studies</a></li>
-          <li><a routerLink="/connect/ministries">Ministries</a></li>
-          <li><a routerLink="/connect/prayer-meetings">Prayer Meetings</a></li>
-          <li><a routerLink="/connect/service-teams">Service Teams</a></li>
+          <li><a routerLink="/connect">{{'connect.main'| translate}}</a></li>
+          <li><a routerLink="/connect/bible-studies">{{'connect.bible-studies'| translate}}</a></li>
+          <li><a routerLink="/connect/ministries">{{'connect.ministries'| translate}}</a></li>
+          <li><a routerLink="/connect/prayer-meetings">{{'connect.prayer-meetings'| translate}}</a></li>
+          <li><a routerLink="/connect/service-teams">{{'connect.service-teams'| translate}}</a></li>
         </ul>
       </li>
 
@@ -53,19 +53,35 @@
         (mouseenter)="showEventMenu = true"
         (mouseleave)="showEventMenu = false"
       >
-        <a routerLink="/events" title="Events">Events</a>
+        <a routerLink="/events" title="Events">{{'events.main'| translate}}</a>
         <ul class="events-submenu" [class.is-visible]="showEventMenu">
-          <li><a routerLink="/events/sunday-worship-service">Sunday Service</a></li>
-          <li><a routerLink="/events/holy-communion-service">Holy Communion</a></li>
-          <li><a routerLink="/events/midnight-prayer">Midnight Prayer</a></li>
-          <li><a routerLink="/events/child-dedication">Dedication</a></li>
-          <li><a routerLink="/events/membership-class">Membership</a></li>
+          <li><a routerLink="/events/sunday-worship-service">{{'events.sunday-service'| translate}}</a></li>
+          <li><a routerLink="/events/holy-communion-service">{{'events.holy-communion'| translate}}</a></li>
+          <li><a routerLink="/events/midnight-prayer">{{'events.midnight-prayer'| translate}}</a></li>
+          <li><a routerLink="/events/child-dedication">{{'events.dedication'| translate}}</a></li>
+          <li><a routerLink="/events/membership-class">{{'events.membership'| translate}}</a></li>
 
         </ul>
       </li>
-      <li [class.current]="isActive('/donation')"><a routerLink="/donation" title="Support us">Support us</a></li>
-      <li [class.current]="isActive('/contact')"><a routerLink="/contact" title="Contact us">Contact</a></li>
+      <li [class.current]="isActive('/donation')"><a routerLink="/donation" title="Support us">{{'support-us'| translate}}</a></li>
+      <li [class.current]="isActive('/contact')"><a routerLink="/contact" title="Contact us">{{'contact'| translate}}</a></li>
+    <li class="nav-item" (click)="toggleDropdown()" >
+      <mat-form-field>
+        <mat-label>Select Language</mat-label>
+        <mat-select (selectionChange)="changeLang($event.value)" [value]="lang">
+          <mat-option *ngFor="let language of languages" [value]="language.lang">
+            {{language.flag}}
+            {{language.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    </li>
+
+
+
     </ul>
+
   </nav>
 
   <a class="header-menu-toggle" (click)="toggleMenu()"><span>Menu</span></a>

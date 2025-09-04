@@ -1,0 +1,29 @@
+{
+  "home": "Startseite",
+  "about": {
+    "main": "Über uns",
+    "about-us": "Über uns",
+    "faith-statement": "Glaubensbekenntnis",
+    "our-mission": "Unsere Mission",
+    "history": "Geschichte",
+    "church-staff": "Kirchenpersonal",
+    "supporting-mcci": "Unterstützung von MCCI"
+  },
+  "connect": {
+    "main": "Verbinden",
+    "bible-studies": "Bibelstudien",
+    "ministries": "Dienste",
+    "prayer-meetings": "Gebetstreffen",
+    "service-teams": "Serviceteams"
+  },
+  "events": {
+    "main": "Veranstaltungen",
+    "sunday-service": "Sonntagsgottesdienst",
+    "holy-communion": "Heilige Kommunion",
+    "midnight-prayer": "Mitternachtsgebet",
+    "dedication": "Widmung",
+    "membership": "Mitgliedschaft"
+  },
+  "support-us": "Unterstützen Sie uns",
+  "contact": "Kontakt"
+}

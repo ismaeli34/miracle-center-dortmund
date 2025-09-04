@@ -1,0 +1,29 @@
+{
+  "home": "Accueil",
+  "about": {
+    "main": "À propos",
+    "about-us": "À propos de nous",
+    "faith-statement": "Déclaration de foi",
+    "our-mission": "Notre mission",
+    "history": "Histoire",
+    "church-staff": "Équipe de l'église",
+    "supporting-mcci": "Soutenir le MCCI"
+  },
+  "connect": {
+    "main": "Connexion",
+    "bible-studies": "Études bibliques",
+    "ministries": "Ministères",
+    "prayer-meetings": "Réunions de prière",
+    "service-teams": "Équipes de service"
+  },
+  "events": {
+    "main": "Événements",
+    "sunday-service": "Service du dimanche",
+    "holy-communion": "Sainte communion",
+    "midnight-prayer": "Prière de minuit",
+    "dedication": "Dédicace",
+    "membership": "Adhésion"
+  },
+  "support-us": "Soutenez-nous",
+  "contact": "Contact"
+}

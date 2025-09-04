@@ -1,0 +1,29 @@
+{
+  "home": "Home",
+  "about": {
+    "main": "About",
+    "about-us": "About Us",
+    "faith-statement": "Faith Statement",
+    "our-mission": "Our Mission",
+    "history": "History",
+    "church-staff": "Church Staff",
+    "supporting-mcci": "Supporting MCCI"
+  },
+  "connect": {
+    "main": "Connect",
+    "bible-studies": "Bible Studies",
+    "ministries": "Ministries",
+    "prayer-meetings": "Prayer Meetings",
+    "service-teams": "Service Teams"
+  },
+  "events": {
+    "main": "Events",
+    "sunday-service": "Sunday Service",
+    "holy-communion": "Holy Communion",
+    "midnight-prayer": "Midnight Prayer",
+    "dedication": "Dedication",
+    "membership": "Membership"
+  },
+  "support-us": "Support Us",
+  "contact": "Contact"
+}
