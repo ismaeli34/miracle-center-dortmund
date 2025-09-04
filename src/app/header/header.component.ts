@@ -15,15 +15,14 @@ import {LanguageService} from '../services/language.service';
   styleUrl: './header.component.scss'
 })
 
-
 export class HeaderComponent implements OnInit{
 
   languages: Language[] = [
     { lang: 'en', name: 'English', flag: '🇬🇧',  value: 'en', },
-    { lang: 'de', name: 'German', flag: '🇩🇪', value: 'en' },
+    { lang: 'de', name: 'German', flag: '🇩🇪', value: 'de' },
 
   ];
-  lang ='';
+  lang ='en';
 
   showAboutMenu = false;
   showConnectMenu = false;
@@ -63,11 +62,12 @@ export class HeaderComponent implements OnInit{
 
   ngOnInit() {
     // Subscribe to language changes from the service
+    this.lang = this.languageService.getCurrentLang();
+
+
     this.languageService.currentLang$.subscribe(lang => {
       this.lang = lang;
-      this.translateService.use(lang);
       this.cdr.detectChanges();
-
       console.log("HEADER LANG", this.lang);
     });
   }

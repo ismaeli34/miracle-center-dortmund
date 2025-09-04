@@ -7,17 +7,21 @@
     <div class="row hero-content">
 
       <div class="column large-full hero-content__text">
-<!--        <h1>-->
-<!--          {{'hero.title'| translate}} <br>-->
-<!--        </h1>-->
+        <h1>{{ 'church.title' | translate }}
 
-        <h1>
-          We are not Just a church <br>
-          but a family <br>
+
+
         </h1>
+
+
+
+        <!--        <h1>-->
+<!--          We are not Just a church <br>-->
+<!--          but a family <br>-->
+<!--        </h1>-->
         <div class="hero-content__buttons">
-          <a routerLink="/about"  class="btn btn--stroke">About Us</a>
-          <a routerLink="/events"  class="btn btn--stroke">Upcoming Events</a>
+          <a routerLink="/about"  class="btn btn--stroke"> {{ 'church.buttons.about' | translate }} </a>
+          <a routerLink="/events"  class="btn btn--stroke"> {{ 'church.buttons.events' | translate }}</a>
         </div>
       </div> <!-- end hero-content__text -->
 
@@ -50,39 +54,36 @@
     <div class="row row-y-center about-content">
 
       <div class="column large-half medium-full">
-        <h3 class="subhead">Welcome to our Church</h3>
+        <h3 class="subhead">{{'about.welcome.subhead' | translate}}</h3>
         <p class="lead">
-          Welcome to Miracle Center Church International Dortmund, a Spirit-filled community passionate about worship, prayer, and experiencing God’s power. We believe the same God who healed, delivered, and performed miracles in the Bible is still at work today, bringing restoration, healing, and renewed hope through faith and the Holy Spirit.
+          {{'about.welcome.description' | translate}}
 
         </p>
-        <a href="about.html" class="btn btn--primary btn--about">More About Miracle Center</a>
+        <a href="about.html" class="btn btn--primary btn--about">{{'about.welcome.button' | translate}}</a>
       </div>
 
       <div class="column large-half medium-full">
         <ul class="about-sched">
           <li>
-            <h4>Main Church Service</h4>
+            <h4>    {{'about.schedule.main-church-service.title' | translate}} </h4>
             <p>
-              Sunday - 11:30 AM <br>
-              Gutenbergstraße 33,
-              44139 Dortmund
-              Germany
+              {{'about.schedule.main-church-service.time' | translate}}
+              <br>
+              {{'about.schedule.main-church-service.location' | translate}}
             </p>
           </li>
           <li>
-            <h4>Kids Church</h4>
+            <h4>      {{'about.schedule.kids-church.title' | translate}}</h4>
             <p>
-              Sunday - 11:30 AM <br>
-              Gutenbergstraße 33,
-              44139 Dortmund
-              Germany
+              {{'about.schedule.kids-church.time' | translate}} <br>
+              {{'about.schedule.kids-church.location' | translate}}
             </p>
           </li>
           <li>
-            <h4>Prayer Meeting</h4>
+            <h4>  {{'about.schedule.prayer-meeting.title' | translate}}</h4>
             <p>
-              Wednesday - 6:00 PM to 7:30 PM <br>
-              Gutenbergstraße 33, 44139 Dortmund, Germany
+              {{'about.schedule.prayer-meeting.time' | translate}}<br>
+              {{'about.schedule.prayer-meeting.location' | translate}}
             </p>
           </li>
         </ul> <!-- end about-sched-->
@@ -99,7 +100,7 @@
 
   <div class="row events-header">
     <div class="column">
-      <h2 class="subhead">Upcoming Events.</h2>
+      <h2 class="subhead">{{'events.subhead' |translate}}</h2>
     </div>
   </div> <!-- end event-header -->
 
@@ -107,68 +108,57 @@
 
     <div class="column events-list__item">
       <h3 class="display-1 events-list__item-title">
-        <a href="#0" title="">Sunday Worship Service.</a>
+        <a href="#0" title="">{{'events.sunday-worship.title' |translate}}</a>
       </h3>
       <p>
-        Experience a beautiful Sunday by praising and worshipping God with us at MCCI as a family.
-        ‘Worship’ seasoned with the powerful and undeniable presence of the Holy Spirit and the life changing
-        ‘Word’ is a wonderful way to begin your week. Meet and fellowship with other members of our Church
-        and you will be amazed to find out how much you belong here. If you’ve never visited us before, we’d love to have you over!
+        {{'events.sunday-worship.description' |translate}}
       </p>
       <ul class="events-list__meta">
-        <li class="events-list__meta-date">Every Sunday</li>
-        <li class="events-list__meta-time">11:30 AM </li>
-        <li class="events-list__meta-location">Gutenbergstraße 33, 44139 Dortmund ,Germany</li>
+        <li class="events-list__meta-date">    {{'events.sunday-worship.meta.date' |translate}}</li>
+        <li class="events-list__meta-time">{{'events.sunday-worship.meta.time' |translate}}</li>
+        <li class="events-list__meta-location">{{'events.sunday-worship.meta.location' |translate}}</li>
       </ul>
     </div> <!-- end events-list__item -->
     <div class="column events-list__item">
       <h3 class="display-1 events-list__item-title">
-        <a href="#0" title="">Prayer Service.</a>
+        <a href="#0" title="">{{'events.prayer-service.title' |translate}}</a>
       </h3>
       <p>
-        Experience the power of prayer at our Prayer Service at MCCI. As a family, we come together to lift our hearts to God,
-        trusting Him to move in our lives. In this Spirit-filled atmosphere, peace is restored, burdens are lifted, and strength
-        is renewed. Prayer not only draws us closer to God but also to one another. Whether it’s your first time or you’ve been before,
-        we warmly welcome you come and see how prayer can transform your life!
+        {{'events.prayer-service.description' |translate}}
       </p>
       <ul class="events-list__meta">
-        <li class="events-list__meta-date">Every Friday</li>
-        <li class="events-list__meta-time">6:00PM - 8:00PM</li>
-        <li class="events-list__meta-location">Gutenbergstraße 33, 44139 Dortmund ,Germany</li>
+        <li class="events-list__meta-date">  {{'events.prayer-service.meta.date' |translate}}</li>
+        <li class="events-list__meta-time">  {{'events.prayer-service.meta.time' |translate}}</li>
+        <li class="events-list__meta-location">  {{'events.prayer-service.meta.location' |translate}}</li>
       </ul>
     </div> <!-- end events-list__item -->
     <div class="column events-list__item">
       <h3 class="display-1 events-list__item-title">
-        <a href="#0" title="">Good Morning Jesus.</a>
+        <a href="#0" title="">{{'events.good-morning-jesus.title' |translate}}</a>
       </h3>
       <p>
-        Start your Saturday beautifully with Good Morning Jesus at MCCI.
-        Join us as a family to greet the Lord through heartfelt prayer,
-        uplifting worship, and the life giving Word. Filled with the presence of the Holy Spirit,
-        mornings with Jesus bring peace, joy, and renewed strength for the week ahead.
-        Meet and connect with other members of our Church you’ll be amazed at how much you belong here.
-        If it’s your first time, we’d love to welcome you!
+        {{'events.good-morning-jesus.description' |translate}}
       </p>
       <ul class="events-list__meta">
-        <li class="events-list__meta-date">Every Saturday</li>
-        <li class="events-list__meta-time">9:00AM - 10:00AM</li>
-        <li class="events-list__meta-location">Gutenbergstraße 33, 44139 Dortmund ,Germany</li>
+        <li class="events-list__meta-date">{{'events.good-morning-jesus.meta.date' |translate}}</li>
+        <li class="events-list__meta-time">{{'events.good-morning-jesus.meta.time' |translate}}</li>
+        <li class="events-list__meta-location">{{'events.good-morning-jesus.meta.location' |translate}}</li>
       </ul>
     </div> <!-- end events-list__item -->
     <div class="column events-list__item">
       <h3 class="display-1 events-list__item-title">
-        <a href="#0" title="">Midnight Service.</a>
+        <a href="#0" title=""> {{'events.midnight-service.title' |translate}}</a>
       </h3>
       <p>
-        Experience a powerful encounter with God at our Midnight Service at MCCI,
-        held on the last Friday of every month. Join us as a family for worship, prayer, and the life changing Word in the presence of the Holy Spirit.
-        This sacred time is perfect for reflection, renewal, and breakthroughs. Meet and fellowship with other members
-        you’ll be amazed at how much you belong here. If it’s your first time, we’d love to welcome you!
+        {{'events.midnight-service.description' |translate}}
       </p>
       <ul class="events-list__meta">
-        <li class="events-list__meta-date">Last Friday of the Month</li>
-        <li class="events-list__meta-time">10:00PM - 2:00AM</li>
-        <li class="events-list__meta-location">Gutenbergstraße 33, 44139 Dortmund ,Germany</li>
+        <li class="events-list__meta-date">        {{'events.midnight-service.meta.date' |translate}}
+        </li>
+        <li class="events-list__meta-time">        {{'events.midnight-service.meta.time' |translate}}
+        </li>
+        <li class="events-list__meta-location">        {{'events.midnight-service.meta.location' |translate}}
+        </li>
       </ul>
     </div> <!-- end events-list__item -->
 

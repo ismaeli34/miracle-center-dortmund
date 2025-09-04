@@ -5,37 +5,37 @@
         <a class="site-logo" routerLink="/">
           <img src="church_512.png" alt="Homepage" class="logo-icon">
           <span class="logo-box">
-        <span class="logo-title">Miracle Center Church International e.V</span>
-        <span class="logo-subtitle">Dortmund, Germany</span>
+        <span class="logo-title">{{'footer.logo.title' |translate}}</span>
+        <span class="logo-subtitle">{{'footer.logo.subtitle' |translate}}</span>
       </span>
         </a>
       </div>
       <p>
-        MCCI is a church that believes in Jesus,
-        a church that loves God and people.
+        {{'footer.description' |translate}}
       </p>
     </div>
     <div class="column large-half tab-full">
       <div class="row">
         <div class="column large-7 medium-full">
-          <h4 class="h6">Our Location</h4>
+          <h4 class="h6"> {{'footer.location.title' |translate}}</h4>
           <p>
-            Gutenbergstraße 33, <br>
-            44139 Dortmund <br>
-           Germany
+            {{'footer.location.address' |translate}} <br>
           </p>
           <p>
-            <a href="https://www.google.com/maps/place/Gutenbergstraße+33,+44139+Dortmund/@51.51593,7.46719,17z" target="_blank" class="btn btn--footer">Get Direction</a>
+            <a href="https://www.google.com/maps/place/Gutenbergstraße+33,+44139+Dortmund/@51.51593,7.46719,17z" target="_blank" class="btn btn--footer">
+              {{'footer.location.button' |translate}} <br>
+
+            </a>
           </p>
         </div>
         <div class="column large-5 medium-full">
           <h4 class="h6">Quick Links</h4>
           <ul class="footer-list">
-            <li><a routerLink="/">Home</a></li>
-            <li><a routerLink="/about">About</a></li>
-            <li><a routerLink="/events"> Events</a></li>
-            <li><a routerLink="/donation"> Support Us</a></li>
-            <li><a routerLink="/contact">Contact</a></li>
+            <li><a routerLink="/"> {{'footer.quick-links.links.home' |translate}}</a></li>
+            <li><a routerLink="/about">{{'footer.quick-links.links.about' |translate}}</a></li>
+            <li><a routerLink="/events"> {{'footer.quick-links.links.events' |translate}}</a></li>
+            <li><a routerLink="/donation"> {{'footer.quick-links.links.support-us' |translate}}</a></li>
+            <li><a routerLink="/contact">{{'footer.quick-links.links.contact' |translate}}</a></li>
           </ul>
         </div>
       </div>

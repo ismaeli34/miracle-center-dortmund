@@ -7,6 +7,9 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class LanguageService {
 
+  constructor(private translate: TranslateService) {
+  }
+
   // Initial language
   private currentLangSubject = new BehaviorSubject<string>('en');
 
@@ -21,6 +24,7 @@ export class LanguageService {
   // Change language
   changeLanguage(lang: string) {
     this.currentLangSubject.next(lang); // this emits the new language
+    this.translate.use(lang);
   }
 
 }

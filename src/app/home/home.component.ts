@@ -14,7 +14,7 @@ import {Subscription} from 'rxjs';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit, OnDestroy{
+export class HomeComponent implements OnInit{
 
   lang = '';
   private langSubscription!: Subscription;
@@ -26,24 +26,16 @@ export class HomeComponent implements OnInit, OnDestroy{
 
   ngOnInit() {
     this.lang = this.languageService.getCurrentLang();
-    this.translateService.use(this.lang);
 
     this.langSubscription = this.languageService.currentLang$.subscribe(lang => {
       this.lang = lang;
-      this.translateService.use(lang).subscribe(() => {
-        this.cdr.detectChanges();
-        console.log("HOME LANG", this.lang);
-
-      });
+      this.cdr.detectChanges(); // Trigger change detection
+      console.log("HOME LANG", this.lang);
     });
   }
 
 
-  ngOnDestroy() {
-    if (this.langSubscription) {
-      this.langSubscription.unsubscribe();
-    }
-  }
+
 
 
 }
