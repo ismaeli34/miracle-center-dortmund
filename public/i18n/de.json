@@ -40,6 +40,11 @@
   },
   "events": {
     "main": "Veranstaltungen",
+    "sunday-service": "Gottesdienst am Sonntag",
+    "holy-communion": "Heilige Kommunion",
+    "midnight-prayer": "Mitternachtsgebet",
+    "dedication": "Weihe",
+    "membership": "Mitgliedschaft",
     "subhead": "Kommende Veranstaltungen",
     "sunday-worship": {
       "title": "Sonntagsgottesdienst",
@@ -84,7 +89,7 @@
     "title": "Wir sind nicht nur eine Kirche, sondern eine Familie",
     "buttons": {
       "about": "Über uns",
-      "events": "Kommende Veranstaltungen"
+      "events": "Veranstaltungen"
     },
     "social": {
       "title": "Folgen Sie uns",

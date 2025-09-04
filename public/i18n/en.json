@@ -40,6 +40,11 @@
   },
   "events": {
     "main": "Events",
+    "sunday-service": "Sunday service",
+    "holy-communion": "Holy Communion",
+    "midnight-prayer": "Midnight Prayer",
+    "dedication": "Dedication",
+    "membership": "Membership",
     "subhead": "Upcoming Events",
     "sunday-worship": {
       "title": "Sunday Worship Service",
