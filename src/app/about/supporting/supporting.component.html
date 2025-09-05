@@ -26,24 +26,24 @@
   </mat-expansion-panel>
 
   <!-- Panel 2: Direct Deposit -->
-  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-    <mat-expansion-panel-header>
-      <mat-panel-title>2. Direct Deposit (Überweisung)</mat-panel-title>
-      <mat-icon class="expand-icon">
-        {{ panelOpenState() ? 'expand_less' : 'expand_more' }}
-      </mat-icon>
-    </mat-expansion-panel-header>
+<!--  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">-->
+<!--    <mat-expansion-panel-header>-->
+<!--      <mat-panel-title>2. Direct Deposit (Überweisung)</mat-panel-title>-->
+<!--      <mat-icon class="expand-icon">-->
+<!--        {{ panelOpenState() ? 'expand_less' : 'expand_more' }}-->
+<!--      </mat-icon>-->
+<!--    </mat-expansion-panel-header>-->
 
-    <p>Make a direct deposit to the church account:</p>
-    <ul>
-      <li><strong>Receiver:</strong> {{bankdetails.accountHolder}}</li>
-      <li><strong>IBAN:</strong> {{bankdetails.iban}}</li>
-      <li><strong>Bank:</strong> {{bankdetails.bankName}}</li>
-      <li><strong>BIC:</strong> {{bankdetails.bic}}</li>
+<!--    <p>Make a direct deposit to the church account:</p>-->
+<!--    <ul>-->
+<!--      <li><strong>Receiver:</strong> {{bankdetails.accountHolder}}</li>-->
+<!--      <li><strong>IBAN:</strong> {{bankdetails.iban}}</li>-->
+<!--      <li><strong>Bank:</strong> {{bankdetails.bankName}}</li>-->
+<!--      <li><strong>BIC:</strong> {{bankdetails.bic}}</li>-->
 
-    </ul>
-    <p><strong>Note:</strong> Include your full name and address to receive a German tax statement.</p>
-  </mat-expansion-panel>
+<!--    </ul>-->
+<!--    <p><strong>Note:</strong> Include your full name and address to receive a German tax statement.</p>-->
+<!--  </mat-expansion-panel>-->
 </mat-accordion>
 
 
