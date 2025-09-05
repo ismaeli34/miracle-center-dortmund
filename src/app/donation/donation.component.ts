@@ -6,6 +6,7 @@ import {
     MatExpansionPanelTitle
 } from "@angular/material/expansion";
 import {MatIconModule} from '@angular/material/icon';
+import {environment} from '../environment/environment';
 
 @Component({
   selector: 'app-donation',
@@ -22,6 +23,8 @@ import {MatIconModule} from '@angular/material/icon';
 })
 export class DonationComponent {
   readonly panelOpenState = signal(false);
+  bankdetails = environment.bankDetails;
+
 
 
 }

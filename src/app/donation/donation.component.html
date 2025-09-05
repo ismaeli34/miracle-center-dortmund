@@ -58,10 +58,11 @@
 
           <p>Make a direct deposit to the church account:</p>
           <ul>
-            <li><strong>Receiver:</strong> Miracle Center Church International e.V</li>
-            <li><strong>IBAN:</strong> DE49 0000 0000 0000 0000 00</li>
-            <li><strong>BIC:</strong> COBADEFFXXX</li>
-            <li><strong>Bank:</strong> Commerzbank Dortmund</li>
+            <li><strong>Receiver:</strong> {{bankdetails.accountHolder}}</li>
+            <li><strong>IBAN:</strong> {{bankdetails.iban}}</li>
+            <li><strong>Bank:</strong> {{bankdetails.bankName}}</li>
+            <li><strong>BIC:</strong> {{bankdetails.bic}}</li>
+
           </ul>
           <p><strong>Note:</strong> Include your full name and address to receive a German tax statement.</p>
         </mat-expansion-panel>

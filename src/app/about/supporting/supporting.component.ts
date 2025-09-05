@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {ChangeDetectionStrategy, signal} from '@angular/core';
 import { MatIconModule} from '@angular/material/icon';
+import {environment} from '../../environment/environment';
 
 @Component({
   selector: 'app-supporting',
@@ -13,6 +14,7 @@ import { MatIconModule} from '@angular/material/icon';
 export class SupportingComponent {
 
   readonly panelOpenState = signal(false);
+  bankdetails = environment.bankDetails;
 
 
 }
