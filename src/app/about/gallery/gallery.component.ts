@@ -17,7 +17,7 @@ export class GalleryComponent implements OnInit{
     const imagePaths = [
       'church_photo_2.jpg',
       'church_photo_3.jpg',
-      'pastor-04.png'
+      'pastor-04.jpg'
     ];
 
     this.images = imagePaths.map(path => new ImageItem({ src: path, thumb: path }));
