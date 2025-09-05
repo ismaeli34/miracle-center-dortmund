@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 #sensitive files
-/environment.ts
+src/app/environment/
