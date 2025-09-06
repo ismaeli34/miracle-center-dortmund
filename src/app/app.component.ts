@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
+import {FloatingButtonComponent} from './floating-button/floating-button.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, TranslateModule],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, TranslateModule, FloatingButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
