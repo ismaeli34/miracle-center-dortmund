@@ -24,6 +24,7 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "hammerjs": "^2.0.8",
     "jquery": "^3.7.1",
+    "lightgallery": "^2.9.0-beta.1",
     "ng-gallery": "^12.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

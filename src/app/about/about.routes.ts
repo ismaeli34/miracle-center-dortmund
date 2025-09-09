@@ -10,12 +10,12 @@ import {SupportingComponent} from './supporting/supporting.component';
 import {GalleryComponent} from './gallery/gallery.component';
 import {PurposeAndMissionComponent} from './purpose-and-mission/purpose-and-mission.component';
 
-const routes: Routes = [
+export const ABOUT_ROUTES: Routes = [
   {
     path:'',
     component:AboutComponent,
     children:[
-      { path: '', component: AboutUsComponent },
+      { path: 'about-us', component: AboutUsComponent },
       { path: 'our-pastor', component: OurPastorComponent },
       { path: 'faith-statement', component: FaithStatementComponent },
       { path: 'history', component: HistoryComponent },
@@ -27,8 +27,3 @@ const routes: Routes = [
   }
 ];
 
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class AboutRoutingModule { }

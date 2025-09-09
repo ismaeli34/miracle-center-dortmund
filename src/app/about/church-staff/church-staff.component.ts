@@ -4,6 +4,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-church-staff',
+  standalone:true,
   imports: [CommonModule,FormsModule,ReactiveFormsModule],
   templateUrl: './church-staff.component.html',
   styleUrl: './church-staff.component.scss'

@@ -3,6 +3,7 @@ import {ActivatedRoute, Router, RouterLink, RouterLinkActive, RouterOutlet} from
 
 @Component({
   selector: 'app-about',
+  standalone:true,
   imports: [
     RouterOutlet,
     RouterLinkActive,

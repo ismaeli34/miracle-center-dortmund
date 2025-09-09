@@ -5,6 +5,7 @@ import { MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-supporting',
+  standalone:true,
   imports: [MatExpansionModule, MatIconModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './supporting.component.html',
