@@ -18,7 +18,7 @@
         (mouseenter)="showAboutMenu = true"
         (mouseleave)="showAboutMenu = false"
       >
-        <a routerLink="/about" title="About">{{'about.main'| translate}}</a>
+        <a routerLink="/about/about-us" title="About">{{'about.main'| translate}}</a>
         <ul class="about-submenu" [class.is-visible]="showAboutMenu">
           <li><a routerLink="/about/about-us">{{'about.about-us'| translate}}</a></li>
           <li><a routerLink="/about/our-pastor">{{'about.our-pastor'| translate}}</a></li>
