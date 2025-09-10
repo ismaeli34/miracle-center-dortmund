@@ -22,6 +22,7 @@ import {LightgalleryModule} from 'lightgallery/angular';
 })
 export class HomeComponent implements OnInit{
 
+  youtubeLink ="https://www.youtube.com/@revprinceedos924/videos"
   name = "Angular " + VERSION.major;
   settings = {
     counter: false,
