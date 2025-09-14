@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class ImpressumComponent {
 
+  churchName: string = 'Miracle Center Church International e.V Dortmund';
+  legalForm: string = 'Körperschaft des öffentlichen Rechts (KdöR)';
+  address: string = 'Gutenbergstraße 33, 44139 Dortmund';
+  phone: string = '+49 01577 6393379';
+  email: string = 'info@miraclecenter.de';
+  authorizedRepresentative: string = 'Pastor Prince Edos';
+  supervisoryAuthority: string = 'Diocese of YourCity';
+  website: string = '';
+
 }
