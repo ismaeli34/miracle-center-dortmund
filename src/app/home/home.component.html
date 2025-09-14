@@ -26,13 +26,13 @@
     <ul class="hero-social">
       <li class="hero-social__title">Follow Us</li>
       <li>
-        <a href="#0" title="">Facebook</a>
+        <a [href]="facebookLink" target="_blank" rel="noopener noreferrer" title="Facebook">Facebook</a>
       </li>
       <li>
-        <a href="#0" title="">YouTube</a>
+        <a [href]="youtubeLink" target="_blank" rel="noopener noreferrer" title="YouTube">YouTube</a>
       </li>
       <li>
-        <a href="#0" title="">Instagram</a>
+        <a [href]="instagramLink" target="_blank" rel="noopener noreferrer" title="Instagram">Instagram</a>
       </li>
     </ul> <!-- end hero-social -->
 
@@ -273,25 +273,25 @@
     <div class="column">
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#0" title="">
+          <a [href]="facebookLink" target="_blank" rel="noopener noreferrer" title="Facebook">
             <span class="social-list__icon social-list__icon--facebook"></span>
             <span class="social-list__text">Facebook</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a href={{youtubeLink}}    title="">
+          <a [href]="youtubeLink" target="_blank" rel="noopener noreferrer" title="YouTube">
             <span class="social-list__icon social-list__icon--youtube"></span>
             <span class="social-list__text">Youtube</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#0" title="">
+          <a [href]="instagramLink" target="_blank" rel="noopener noreferrer" title="Instagram">
             <span class="social-list__icon social-list__icon--instagram"></span>
             <span class="social-list__text">Instagram</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#0" title="">
+          <a href={{emailLink}} title="">
             <span class="social-list__icon social-list__icon--email"></span>
             <span class="social-list__text">Email</span>
           </a>

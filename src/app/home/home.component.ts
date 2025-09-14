@@ -23,6 +23,9 @@ import {LightgalleryModule} from 'lightgallery/angular';
 export class HomeComponent implements OnInit{
 
   youtubeLink ="https://www.youtube.com/@revprinceedos924/videos"
+  facebookLink = "https://www.facebook.com/miraclecenterDO";
+  instagramLink ="https://www.instagram.com/"
+  emailLink ="";
   name = "Angular " + VERSION.major;
   settings = {
     counter: false,
