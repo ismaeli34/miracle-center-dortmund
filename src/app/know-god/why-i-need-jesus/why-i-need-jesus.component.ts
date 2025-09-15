@@ -37,7 +37,7 @@ export class WhyINeedJesusComponent {
     {
       title: '5. What should I do to be saved?',
       verse: '“If you confess with your mouth, Jesus is Lord, and believe in your heart that God raised him from the dead, you will be saved.” – Romans 10:9',
-      question: 'Nothing you’ve done is beyond the mercy of God. If you get knocked down, all you have to do is get back up and believe in the promises of Lord Jesus!',
+      question: 'Believe on the Lord Jesus Christ, and you will be saved, you and your household.',
       image: 'step_4.png'
 
     }

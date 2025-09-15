@@ -15,7 +15,7 @@ export class ChurchStaffComponent {
     {
       name: 'Prince Edos',
       title: 'Pastor, Elder, Administrative Team',
-      email: 'pastor@mcci.de',
+      email: 'edoprince2000@yahoo.com',
       photo: 'pastor-01.jpg'
     },
     {
