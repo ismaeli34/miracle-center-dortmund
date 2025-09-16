@@ -17,6 +17,8 @@ export class GalleryComponent implements OnInit{
     const imagePaths = [
       'church_photo_2.jpg',
       'church_photo_3.jpg',
+      'miracle_church_10.jpeg',
+      'miracle_church_11.jpeg',
       'pastor-04.jpg'
     ];
 
