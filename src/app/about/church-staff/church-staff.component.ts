@@ -13,29 +13,56 @@ export class ChurchStaffComponent {
  // defaultPhoto = 'assets/images/avatars/user-01.jpg'; // Add a placeholder image here
   staffMembers = [
     {
-      name: 'Prince Edos',
-      title: 'Pastor, Elder, Administrative Team',
+      name: 'Rev Prince Edos',
+      title: 'Senior Pastor',
       email: 'edoprince2000@yahoo.com',
-      photo: 'pastor-01.jpg'
+      photo: 'pastor_prince_edo.jpeg'
     },
     {
-      name: 'Prince Edos',
-      title: 'Pastor, Elder, Administrative Team',
-      email: 'pastor@mcci.de',
-      photo: 'pastor-03.jpg'
+      name: 'Vivian Edos',
+      title: 'Evangelist',
+      email: 'edoprince2000@yahoo.com',
+      photo: 'evangelist_vivian.jpeg'
     },
     {
-      name: 'Prince Edos',
-      title: 'Pastor, Elder, Administrative Team',
-      email: 'pastor@mcci.de',
-      photo: 'pastor-01.jpg'
+      name: 'Ruben',
+      title: 'Elder',
+      email: '',
+      photo: 'elder_ruben.jpeg'
+    },
+    {
+      name: 'Jolly',
+      title: 'Deacon',
+      email: '',
+      photo: 'jolly_deaco.jpeg'
+    },
+    {
+      name: 'Isoken',
+      title: 'Evangelist',
+      email: '',
+      photo: 'evangelist_isoken.jpeg'
+    },
+    {
+      name: 'Smith',
+      title: 'Deacon',
+      email: '',
+      photo: 'deacon_smith.png'
 
     },
+
     {
-      name: 'Prince Edos',
-      title: 'Pastor, Elder, Administrative Team',
-      email: 'pastor@mcci.de',
-      photo: 'pastor-03.jpg'
+      name: 'Efosa ',
+      title: 'Deacon',
+      email: '',
+      photo: 'elder_.jpeg'
+
+    },
+
+    {
+      name: 'Precious ',
+      title: 'Deaconess',
+      email: '',
+      photo: 'Deaconess_Precious.jpeg'
 
     },
   ];
